@@ -1,6 +1,6 @@
 How to start
 
-cd to docs
+cd to `/docs`
 ```
 npm i
 npm run storybook
