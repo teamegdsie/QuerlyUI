@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+publishing react component as package https://www.youtube.com/watch?v=hf6Z8OZanec
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
