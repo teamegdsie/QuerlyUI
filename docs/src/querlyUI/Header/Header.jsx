@@ -1,11 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { StyledHeader } from '../styled/Header.styled';
 
-import { Button } from './Button';
+// import { Button } from './Button';
 import './header.css';
 
 export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
-  <header>
+  <StyledHeader
+  //  bg="gold"
+   >
     <div className="wrapper">
       <div>
         <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -32,17 +35,17 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
             <span className="welcome">
               Welcome, <b>{user.name}</b>!
             </span>
-            <Button size="small" onClick={onLogout} label="Log out" />
+            {/* <Button size="small" onClick={onLogout} label="Log out" /> */}
           </>
         ) : (
           <>
-            <Button size="small" onClick={onLogin} label="Log in" />
-            <Button primary size="small" onClick={onCreateAccount} label="Sign up" />
+            {/* <Button size="small" onClick={onLogin} label="Log in" />
+            <Button primary size="small" onClick={onCreateAccount} label="Sign up" /> */}
           </>
         )}
       </div>
     </div>
-  </header>
+  </StyledHeader>
 );
 
 Header.propTypes = {
